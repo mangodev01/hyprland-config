@@ -26,5 +26,5 @@ else
     # Start recording
     mkdir -p "$HOME/media/recordings/mkv"
     LAST="$HOME/media/recordings/mkv/$(date +'%H:%M:%S').mkv"
-    wf-recorder -y -g "$(slurp)" -f "$LAST"
+    wf-recorder -y -a -g "$(slurp)" -f "$LAST"
 fi
